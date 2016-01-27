@@ -12,7 +12,6 @@ ENV WORKDIR /work
 
 WORKDIR /work
 
-ENTRYPOINT /clone-and-run.sh
-CMD ''
+ENTRYPOINT ["/clone-and-run.sh"]
 
 # example: docker run -e REPO=https://github.com/testxio/testx-quickstart.git --volume $PWD/tmpwork:/work testx/executor
